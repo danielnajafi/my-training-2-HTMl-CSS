@@ -1,0 +1,154 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(fonts/IRANSANSExpanded.woff2);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    direction: rtl;
+
+    font-family: 'myFirstFont';
+}
+
+.navbar {
+    width: 100%;
+    height: 8vh;
+    background-color: rgb(208, 214, 216);
+    display: flex;
+    position: relative;
+    float: right;
+    justify-content: space-between;
+    z-index: 1;
+
+
+}
+
+.navbar img {
+    float: right;
+    width: 10vh;
+    height: 8vh;
+    margin-right: 0;
+
+
+}
+
+.navbaritems {
+    text-decoration: none;
+    float: right;
+    margin-right: 100px;
+    color: black;
+    font-size: 35px;
+}
+
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 92vh;
+    background-color: white;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+
+}
+
+.left-container {
+    position: absolute;
+    left: 0px;
+    width: 50%;
+    height: 92vh;
+    display: flex;
+
+}
+
+.right-container {
+    position: absolute;
+    right: 0px;
+    width: 50%;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+table {
+    width: 95%;
+    position: absolute;
+    text-align: center;
+    color: black;
+    right: 2%;
+    top: 15%;
+    height: 40%;
+
+    border-collapse: collapse;
+}
+
+table,
+tr {
+    border: solid 1px rgb(177, 177, 177);
+}
+
+th {
+    height: 80px;
+
+
+}
+
+.login {
+    width: 90%;
+    height: 25%;
+    position: relative;
+    right: 5%;
+    top: 70%;
+
+}
+
+.inputs input {
+    text-align: right;
+    width: 100%;
+    height: 3vh;
+
+    float: right;
+    position: absolute;
+    direction: rtl;
+
+}
+
+button {
+    background-color: rgb(91, 91, 168);
+    height: 10vh;
+    width: 100%;
+    font-size: 25px;
+}
+
+.picture {
+
+    position: absolute;
+    left: 150px;
+
+
+
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .container {
+
+        display: flex;
+        flex-direction: column-reverse;
+        
+
+    }
+
+
+
+}
